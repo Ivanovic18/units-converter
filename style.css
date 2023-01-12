@@ -173,6 +173,7 @@ h2 {
 
     .bottom {
         border-radius: 0;
+        height: 100%;
     }
 
     .input {
