@@ -12,10 +12,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
 }
 
 .container {
+    height: 300px;
     border-radius: 500px;
     display: flex;
     flex-direction: column;
@@ -97,11 +98,6 @@ img {
     transition: filter 0.5s;
 }
 
-img:hover {
-    filter: invert(0.5);
-    cursor: pointer;
-}
-
 .bottom {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -161,6 +157,21 @@ h2 {
 
 .body-dark {
     background-color: #273549;
+}
+
+.body-light-mobile {
+    background-color: #e6e6e6;
+}
+
+.body-dark-mobile {
+    background-color: #1f2937;
+}
+
+@media (min-width: 576px) {
+    img:hover {
+        filter: invert(0.5);
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 576px) {
