@@ -17,6 +17,8 @@ body {
 
 .container {
     border-radius: 500px;
+    display: flex;
+    flex-direction: column;
 }
 
 .top {
@@ -44,11 +46,12 @@ h2:hover {
     background-color: transparent;
     border: 2px solid #b295ff;
     border-radius: 5px;
-    min-width: 7rem;
+    width: 28rem;
     height: 7rem;
     color: #fff;
     padding: 10px;
     transition: all 0.5s;
+    resize: none;
 }
 
 .input:focus {
@@ -157,7 +160,45 @@ h2 {
         font-size: 28px;
     }
     .span {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.5;
+    }
+    body {
+        height: 100%;
+    }
+
+    .top {
+        border-radius: 0;
+    }
+
+    .bottom {
+        border-radius: 0;
+    }
+
+    .input {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .unit {
+        padding: 10px;
+    }
+    .top {
+        padding: 2rem;
+    }
+    .bottom {
+        padding: 2rem;
+    }
+
+    .span {
+        font-size: 14px;
+    }
+    img {
+        bottom: 2.6rem;
+        right: 2rem;
+        width: 10%;
     }
 }

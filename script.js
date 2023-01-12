@@ -7,7 +7,8 @@ const volumeEl = $("#volume-span");
 const massEl = $("#mass-span");
 
 $("button").click(function () {
-    const input = $("#input").text();
+    const input = $("#input").val();
+    console.log(input);
     let inputNumber = Number(input);
     if (inputNumber) {
         let feet = (inputNumber * 3.281).toFixed(3);
