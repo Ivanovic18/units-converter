@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Units Converter</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top">
+                <h1>Metric/Impreial Unit Conversion</h1>
+                <span
+                    class="input"
+                    id="input"
+                    role="textbox"
+                    contenteditable
+                ></span>
+
+                <button>Convert</button>
+                <img src="images/light.png" alt="" />
+            </div>
+            <div class="bottom">
+                <div class="units">
+                    <div id="length" class="unit">
+                        <h2>Length (Meter/Feet)</h2>
+                        <span class="span" id="length-span">&nbsp</span>
+                    </div>
+                    <div id="volume" class="unit">
+                        <h2>Volume (Liters/Gallons)</h2>
+                        <span class="span" id="volume-span">&nbsp</span>
+                    </div>
+                    <div id="mass" class="unit">
+                        <h2>Mass (Kilograms/Pounds)</h2>
+                        <span class="span" id="mass-span">&nbsp</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

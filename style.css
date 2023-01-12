@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+* {
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border-radius: 500px;
+}
+
+.top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: #6943ff;
+    padding: 3rem;
+    position: relative;
+}
+
+h1 {
+    color: #fff;
+    font-size: 36px;
+}
+
+h1:hover,
+h2:hover {
+    cursor: default;
+}
+
+.input {
+    display: inline-block;
+    margin: 1.5rem auto 1.7rem auto;
+    font-size: 72px;
+    background-color: transparent;
+    border: 2px solid #b295ff;
+    border-radius: 5px;
+    min-width: 7rem;
+    height: 7rem;
+    color: #fff;
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+.input:focus {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.input::selection {
+    background-color: #fff;
+    color: #6943ff;
+}
+
+button {
+    display: block;
+    margin: auto;
+    color: #3d3d3d;
+    background-color: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    padding: 0.75rem 1.25rem;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+button:hover {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    width: 7%;
+    position: absolute;
+    bottom: 3.3rem;
+    right: 3rem;
+    transition: filter 0.5s;
+}
+
+img:hover {
+    filter: invert(0.5);
+    cursor: pointer;
+}
+
+.bottom {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 3rem;
+}
+
+.units {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.unit {
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.heading-light {
+    color: #5a537b;
+}
+
+.heading-dark {
+    color: #ccc1ff;
+}
+
+.span-light {
+    color: #353535;
+}
+
+.span-dark {
+    color: #fff;
+}
+
+.unit-light {
+    background-color: #f5f5f5;
+}
+
+.unit-dark {
+    background-color: #273549;
+}
+
+.bottom-light {
+    background-color: #e6e6e6;
+}
+
+.bottom-dark {
+    background-color: #1f2937;
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 28px;
+    }
+    .span {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}
