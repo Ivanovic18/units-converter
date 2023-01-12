@@ -102,6 +102,7 @@ function setLightThemeWithAnimation() {
     $(".unit").addClass("unit-light", 300).removeClass("unit-dark", 300);
     $("h2").addClass("heading-light", 300).removeClass("heading-dark", 300);
     $(".span").addClass("span-light", 300).removeClass("span-dark", 300);
+    $("body").addClass("body-light", 300).removeClass("body-dark", 300);
     $("img").fadeOut("fast", function () {
         $("img").attr("src", "images/dark.png");
         $("img").fadeIn("fast");
@@ -113,6 +114,7 @@ function setDarkThemeWithAnimation() {
     $(".unit").addClass("unit-dark", 300).removeClass("unit-light", 300);
     $("h2").addClass("heading-dark", 300).removeClass("heading-light", 300);
     $(".span").addClass("span-dark", 300).removeClass("span-light", 300);
+    $("body").addClass("body-dark", 300).removeClass("body-light", 300);
     $("img").fadeOut("fast", function () {
         $("img").attr("src", "images/light.png");
         $("img").fadeIn("fast");
@@ -125,6 +127,7 @@ function setLightTheme() {
     $("h2").addClass("heading-light").removeClass("heading-dark");
     $(".span").addClass("span-light").removeClass("span-dark");
     $("img").attr("src", "images/dark.png");
+    $("body").addClass("body-light").removeClass("body-dark");
 }
 
 function setDarkTheme() {
@@ -133,4 +136,5 @@ function setDarkTheme() {
     $("h2").addClass("heading-dark").removeClass("heading-light");
     $(".span").addClass("span-dark").removeClass("span-light");
     $("img").attr("src", "images/light.png");
+    $("body").addClass("body-dark").removeClass("body-light");
 }
